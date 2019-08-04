@@ -1,18 +1,26 @@
 <?php
 
 class Fizzbuzzing {
+//use echo or return?
 
-  public function fizzbuzz($number) {
+  function fizzbuzz($number) {
       if ($number == 0) {
-          return $number;
+          echo $number;
       } elseif ($number % 3 == 0 && $number % 5 == 0) {
-          return "Fizzbuzz";
+          echo "Fizzbuzz";
       } elseif ($number % 3 == 0) {
-          return "Fizz";
+          echo "Fizz";
       } elseif ($number % 5 == 0) {
-          return "Buzz";
+          echo "Buzz";
       } else {
-          return $number;
+          echo $number;
       }
   }
+
+  // work on this function. How do I get feedback in PHP to invoke another method and print list of numbers 1-100??
+//  function numbers() {
+//      for ($i = 0; $i < 100; $i++) {
+//        fizzbuzz(i);
+//      }
+//  }
 }
