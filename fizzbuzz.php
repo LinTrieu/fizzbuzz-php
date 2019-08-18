@@ -26,5 +26,10 @@ class Fizzbuzzing {
 //      }
 //  }
 }
-$obj = new Fizzbuzzing();
-$obj->speak();
+
+# Methods can be used dynamically
+//$obj = new Fizzbuzzing();
+//$obj->speak();
+
+#Methods can be used statically
+Fizzbuzzing::speak();
