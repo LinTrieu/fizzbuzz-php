@@ -1,11 +1,14 @@
 <?php
 
 class Fizzbuzzing {
-//use echo or return?
 
   function speak() {
-      echo "Hello world";
+      echo "Hello, PHP world!";
+      for ($i=0; $i<=100; $i++) {
+        echo $this->fizzbuzz($i) . "\n";
+      }
   }
+
   function fizzbuzz($number) {
       if ($number == 0) {
           echo $number;
@@ -28,8 +31,8 @@ class Fizzbuzzing {
 }
 
 # Methods can be used dynamically
-//$obj = new Fizzbuzzing();
-//$obj->speak();
+$obj = new Fizzbuzzing();
+$obj->speak(5);
 
-#Methods can be used statically
-Fizzbuzzing::speak();
+//#Methods can be used statically
+//Fizzbuzzing::speak();
