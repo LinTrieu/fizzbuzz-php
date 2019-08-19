@@ -3,7 +3,7 @@
 class Fizzbuzzing {
 
   function speak() {
-      echo "Hello, PHP world!";
+      echo "Hello, PHP world! \n";
       for ($i=0; $i<=100; $i++) {
         echo $this->fizzbuzz($i) . "\n";
       }
